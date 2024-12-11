@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Homework 12</title>
     <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-D8Btx21I.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-BrddEoy-.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-Bv2TTVLQ.css">
   </head>
   <body>
-    <main>
-      <p>hello</p>
-    </main>
+    <form class="search-form" id="search-form">
+      <input
+        class="search-input"
+        type="text"
+        name="searchQuery"
+        placeholder="Search images..."
+      />
+      <button class="search-btn" type="submit">Search</button>
+    </form>
+    <span class="loader hidden"></span>
+    <div class="gallery"></div>
 
   </body>
 </html>
