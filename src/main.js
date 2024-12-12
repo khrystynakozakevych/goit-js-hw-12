@@ -1,5 +1,4 @@
 // importing modules and packages
-import axios from 'axios';
 import { fetchImages } from './js/pixabay-api';
 import {
   renderGallery,
