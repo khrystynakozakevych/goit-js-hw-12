@@ -132,13 +132,13 @@
 
 .custom-toast-error .iziToast-close,
 .custom-toast-success .iziToast-close {
-  background: url('./img/close.png') no-repeat 50% 50% !important;
+  background: url('../img/close.png') no-repeat 50% 50% !important;
   background-size: 12px !important;
   opacity: 1 !important;
 }
 
 .custom-toast-error .iziToast-icon {
-  background: url('./img/error.png') no-repeat 50% 50% !important;
+  background: url('../img/error.png') no-repeat 50% 50% !important;
   opacity: 1 !important;
 }
 
