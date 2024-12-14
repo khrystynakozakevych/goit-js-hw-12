@@ -84,6 +84,7 @@ loadMoreBtn.addEventListener('click', async () => {
   try {
     const data = await fetchImages(query, page);
     hideLoader(loader);
+    renderGallery(data.hits);
 
     if (data.hits.length === 0 || data.totalHits <= page * 15) {
       iziToast.warning({
@@ -93,8 +94,6 @@ loadMoreBtn.addEventListener('click', async () => {
       loadMoreBtn.classList.add('hidden');
       return;
     }
-
-    renderGallery(data.hits);
 
     // smooth scrolling
     const { height: cardHeight } = document
